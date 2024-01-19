@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <style type="text/css">
+
+        .box{
+            width: 300px;
+            height: 350px;
+            border: 1px solid black;
+            float: left;
+            margin: 50px 20px;
+            background-size:cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            position: relative;
+            cursor: url("img/newsulwhasoo_hd_black_search.png"), auto;
+            overflow: hidden;
+            transition: all 0.5s;
+        }
+
+        .box1{background-image: url("img/with_12.jpg");}
+        .box2{background-image: url("img/with_13.jpg");}
+        .box3{background-image: url("img/with_14.jpg");}
+        .box4{background-image: url("img/with_15.jpg");}
+
+        .box:hover{
+            background-position: center -20px;
+        }
+
+        .circle{
+            width: 1000px;
+            height: 500px;
+            border-radius: 50%;
+            background-color: rgba(248, 149, 27, 0.493);
+            position: absolute;
+            left: 50%;
+            top: 100%;
+            transform: translateX(-50%);
+            text-align: center;
+            padding: 30px;
+            transition: all 0.5s;
+        }
+
+        .circle .p1{
+            margin-bottom: 10px;
+        }
+
+        .box:hover .circle{
+            top: 70%;
+            background-color: rgba(248, 149, 27, 1);
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="box box1">
+        <div class="circle">
+            <p class="p1">#55454321</p>
+            <p class="p2">adfdfdfdfdfdffdfdfds</p>
+        </div>
+    </div>
+    <div class="box box2">
+        <div class="circle">
+            <p class="p1">#55454321</p>
+            <p class="p2">adfdfdfdfdfdffdfdfds</p>
+        </div>
+    </div>
+    <div class="box box3">
+        <div class="circle">
+            <p class="p1">#55454321</p>
+            <p class="p2">adfdfdfdfdfdffdfdfds</p>
+        </div>
+    </div>
+    <div class="box box4">
+        <ul class="circle">
+            <li class="p1">#55454321</li>
+            <li class="p2">adfdfdfdfdfdffdfdfds</li>
+        </ul>
+    </div>
+</body>
+</html>
