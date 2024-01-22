@@ -17,4 +17,14 @@ $(function(){
     })
 
 
+
+
+    //이미지슬라이드 영역 slick
+    $(".visual_wrap").slick({
+        autoplay:true,
+        autoplaySpeed:3000,
+        dots:true,
+        arrows:true,
+    })
+
 })//jquery
