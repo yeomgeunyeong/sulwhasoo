@@ -18,6 +18,12 @@
     /* border: 1px solid red; */
 }
 
+
+/* 모바일용 햄버거버튼 */
+.mob_nav_btn{display: none;}
+
+.mob_nav{display: none;}
+
 .select_language{
     /* border: 1px solid red; */
     width: 25%;
@@ -687,9 +693,11 @@
 
 
 /* footer영역 */
-#footer{
+#footer{}
+
+.f_1{
     border-top: 1px solid #eee;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #eee; 
 }
 
 .foot_inner{
@@ -697,12 +705,17 @@
     max-width: 1100px;
     margin: 0 auto;
     padding: 15px 0;
-    display: flex;
-    justify-content: space-between;
+    /* display: flex;
+    justify-content: space-between; */
     
 }
 
-.f_left{}
+.f_left{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .f_left a{
     display: inline-block;
     margin-right: 10px;
@@ -712,9 +725,29 @@
 }
 
 .f_left a:hover{
-    border-bottom:1px solid black ;
+    text-decoration: underline;
+    color: black;
 }
 
-.f_right{
+.f_item_wrap a::after{
+    content: "|";
+    color: #666;
+    margin-left: 15px;
 }
 
+.f_item_wrap a:last-child::after{
+    display: none;
+}
+
+.f_bottom{
+    font-size: 13px;
+    color: #666;
+}
+
+.f_bottom .copy{
+    padding: 10px 0;
+}
+
+.f_bottom .copy:hover{
+    color: black;
+}
