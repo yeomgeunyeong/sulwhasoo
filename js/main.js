@@ -27,4 +27,32 @@ $(function(){
         arrows:true,
     })
 
+
+
+
+
+    //선물추천 탭메뉴
+    $(".btn_tab").click(function(e){
+        e.preventDefault();
+        $(".btn_tab").removeClass("on");
+        $(this).addClass("on");
+
+        n=$(this).index();
+        console.log(n);
+
+        $(".recommand_list_wrap>ul").removeClass("act");
+        $(".recommand_list_wrap>ul").eq(n).addClass("act")
+    })
+
+
+
+
+    //flagship slick
+    $(".flag_slide").slick({
+        autoplay:true,
+        autoplaySpeed:2500,
+        dots:true,
+        arrows:true,
+        fade:true,
+    })
 })//jquery
