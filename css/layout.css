@@ -751,3 +751,7 @@
 .f_bottom .copy:hover{
     color: black;
 }
+
+.m_f_copy{display: none;}
+
+.m_foot{display: none;}

@@ -91,4 +91,11 @@ $(function(){
     // });
 
 
+    $(".m_f_copy").click(function(){
+        $(this).toggleClass("on");
+        $(".m_foot").slideDown();
+    })
+
+
+
 })//jquery
